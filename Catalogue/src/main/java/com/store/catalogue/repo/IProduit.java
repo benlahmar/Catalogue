@@ -13,6 +13,6 @@ public interface IProduit extends JpaRepository<Produit, Long>{
 	List<Produit> findByQuantiteLessThan(int seuil);
 	Page<Produit> findByPrixBetween(double p1, double p2, Pageable page);
 	List<ProductDTO> findByDesgLikeIgnoreCase(String d);
-	
+	List<Produit> findByCategorieId(long id);
 	
 }

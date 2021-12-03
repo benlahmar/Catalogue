@@ -4,6 +4,7 @@ public class ProductDTO {
 
 	long id;
 	String desg,description;
+	
 	public long getId() {
 		return id;
 	}
